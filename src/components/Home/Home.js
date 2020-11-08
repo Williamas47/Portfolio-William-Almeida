@@ -7,7 +7,7 @@ const Home = () => {
         <p>Hi, My name is</p>
         <h1><span>W</span>illiam <span>A</span>lmeida</h1>
         <h3>And i'm a Front-End Developer Jr.</h3>
-        <p>
+        <p className="description">
             I’m From Brazil, Rio Grande do Sul, 21 Years,
              Cursando Análise e Desenvolvimento de Sistemas.
               Desenvolvo aplicações Web, desde o protótipo do design,
@@ -17,7 +17,7 @@ const Home = () => {
              juntamente com o HTML e CSS. Tenho conhecimentos sobre React Redux,
             React Router, FlexBox, GridCSS e sobre os fundamentos de UI e UX design.
         </p>
-        <button>Contact Me</button>
+        <button id="contactMe">Contact Me</button>
         <button>PDF</button>
     </StyledHome>
     )

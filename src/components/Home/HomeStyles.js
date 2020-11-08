@@ -6,18 +6,24 @@ export const StyledHome = styled.div`
     padding-left: 5%;
     h1{
         color: var(--text-primary-color);
+        font-size: 4.5em;
+        /* text-decoration: italic; */
+        font-weight: bold;
+        /* background: transparent; */
         span{
             color: var(--secundary-color);
         }
-        /* display: flex;
-        flex-direction: column; */
     } 
     h3{
         color: var(--text-primary-color);
+        font-weight: lighter;
     }
     p{
-        width: 80%;
         color: var(--text-primary-color);
+    }
+    p.description{
+        width: 80%;
+        margin: 25px 0;
     }
 
     button{
@@ -26,15 +32,15 @@ export const StyledHome = styled.div`
         color: var(--text-primary-color);
         border-radius: 5px;
         padding: 12px 39px;
-        /* width: 176px;
-        height: 45px; */
         cursor: pointer;
         position: relative;
         overflow: hidden;
-        z-index:2;
         &:hover{
             /* background: var(--secundary-color); */
         }
+    }
+    button#contactMe{
+        margin-right: 15px;
         &:before{
             content: "";
             position:absolute;
