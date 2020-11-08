@@ -1,6 +1,8 @@
 import React from 'react'
+import SvgFiles from '../SvgFiles';
 // import "./Home.styles.scss"
 import {StyledHome} from "./HomeStyles";
+
 const Home = () => {
     return (
     <StyledHome>
@@ -17,8 +19,11 @@ const Home = () => {
              juntamente com o HTML e CSS. Tenho conhecimentos sobre React Redux,
             React Router, FlexBox, GridCSS e sobre os fundamentos de UI e UX design.
         </p>
+        <div id="mainButtons">
         <button id="contactMe">Contact Me</button>
-        <button>PDF</button>
+        <button id="downloadCurriculum"><SvgFiles icon="PdfDownload"/></button>
+        </div>
+      
     </StyledHome>
     )
 }
