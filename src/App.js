@@ -7,13 +7,13 @@ import Nav from './components/Nav/Nav'
 const App = () => {
   return (
     <div id="App">
-      <Nav/>
+      <Aside/>
       <div id="Main">
       <Home/>
       </div>
-      <Aside/>
+      <Nav/>
     </div>
-
+// ao hover no botao do pfd sair otexto "baixar curriculo"
   )
 }
 

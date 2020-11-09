@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledHome = styled.div`
     height: 100vh;
     padding-top: 10%;
+    padding-top: 110px;
     padding-left: 5%;
     h1{
         color: var(--text-primary-color);
@@ -55,6 +56,7 @@ export const StyledHome = styled.div`
             left: 50%;
             top: 50%;
             border-radius: 50%;
+            z-index: 1;
         }
         &:hover:before{
             /* width: 148px; */
