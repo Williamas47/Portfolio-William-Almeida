@@ -3,6 +3,7 @@ import "./App.css";
 import Aside from './components/Aside/Aside'
 import Home from './components/Home/Home';
 import Nav from './components/Nav/Nav'
+import Skills from './components/Skills/Skills';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Aside/>
       <div id="Main">
       <Home/>
+      <Skills/>
       </div>
       <Nav/>
     </div>

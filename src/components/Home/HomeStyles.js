@@ -4,7 +4,7 @@ export const StyledHome = styled.div`
     height: 100vh;
     padding-top: 10%;
     padding-top: 110px;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     h1{
         color: var(--text-primary-color);
         font-size: 4.5em;
