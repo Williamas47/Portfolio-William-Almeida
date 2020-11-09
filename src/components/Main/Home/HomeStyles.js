@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledHome = styled.div`
     height: 100vh;
     padding-top: 10%;
-    padding-top: 110px;
+    padding-top: 105px;
     /* padding-left: 5%; */
     h1{
         color: var(--text-primary-color);

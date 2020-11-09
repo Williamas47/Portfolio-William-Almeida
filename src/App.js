@@ -13,7 +13,9 @@ const App = () => {
       <Nav/>
     </div>
 // ao hover no botao do pfd sair otexto "baixar curriculo"
-  )
+// div q toda vez q eu scrollo ela aumenta ou diminui
+
+)
 }
 
 export default App
