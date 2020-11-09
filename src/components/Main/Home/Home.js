@@ -1,5 +1,5 @@
 import React from 'react'
-import SvgFiles from '../SvgFiles';
+import SvgFiles from '../../SvgFiles';
 // import "./Home.styles.scss"
 import {StyledHome} from "./HomeStyles";
 

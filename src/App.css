@@ -1,8 +1,10 @@
 :root{
     --primary-color: #111821;
     --secundary-color: #13AA52;
+    --terceary-color: #194B02;
     /* --secundary-color: #63d492; */
     --text-primary-color: #F3F3F4;
+    --text-secundary-color: #A6ACB1;
 }
 * {
     margin: 0;
@@ -14,14 +16,18 @@
     /* font-family: 'Arimo'; */
     /* font-family: 'Nunito'; */
     /* font-family: 'Hind Siliguri'; */
+    
 }
 #App{
     display: flex;
     flex-direction: row;
     /* align-items: center; */
     justify-content: center;
-}
+    
+   }
 #Main{
     width: 85%;
+    /* overflow-y: scroll; */
+    
 }
  

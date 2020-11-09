@@ -42,7 +42,7 @@ export const StyledAside = styled.aside`
         width: 3px;
         margin-top: 100px;
         height: 48%;
-        background: var(--secundary-color);
+        background: var(--terceary-color);
         position: absolute;
     }
     #asideBottom{
