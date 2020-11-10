@@ -17,7 +17,7 @@ const Home = () => {
                Bootstrap, Sass e outros. No front end utilizo linguagens
               como React e JavaScript familiarizado com suas versões ES5 e ES6,
              juntamente com o HTML e CSS. Tenho conhecimentos sobre React Redux,
-            React Router, FlexBox, GridCSS e sobre os fundamentos de UI e UX design.
+            React Router, React Hooks, FlexBox, GridCSS e sobre os fundamentos de UI e UX design.
         </p>
         <div id="mainButtons">
         <button id="contactMe">Contact Me</button>

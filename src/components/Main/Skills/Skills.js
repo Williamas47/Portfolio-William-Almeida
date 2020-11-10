@@ -40,6 +40,7 @@ const Skills = () => {
                             <h4>Advanced Knowlege</h4>
                             <div className="skills">
                             <span>AdobeXD</span>
+                            <span>Figma</span>
                             <span>StyledComponents</span>
                             <span>Flexbox</span>
                             </div>

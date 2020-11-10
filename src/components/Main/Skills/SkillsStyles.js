@@ -1,31 +1,38 @@
 import styled from 'styled-components';
 
-export const StyledSkills = styled.div`
+export const StyledSkills = styled.section`
     height: 100vh;
     /* margin-top: 75px; */
-    padding-top: 25px;
+    padding-top: 15px;
     color: var(--text-primary-color);
 
     h2{
         font-size: 2.5em;
-        margin-bottom: 50px;
         span{ color: var(--secundary-color)};
+        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
     #skillsContent{
         display: flex;
         flex-direction: column;
         gap: 25px;
+        /* doubt */
+        border-radius: 15px;
+        border: 1px solid white;
+        padding: 25px 25px;
+        margin: 0 35px;
+        /*  */
         h3{
             font-size: 1.8em;
             padding-left: 30px;
         }
         .skillItems{
-            margin: 25px 0;
+            margin: 20px 0;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
-            h4{ color: var(--text-secundary-color); }
+            h4{ color: var(--text-secundary-color); margin-bottom: 5px;}
             .skillSection{
                 /* border: 1px solid red; */
                 span{
