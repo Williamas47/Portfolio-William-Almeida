@@ -6,7 +6,7 @@ export const StyledNav = styled.nav`
     height: 100vh;
     position:fixed;
     right: 0;
-    margin-right: 5px;
+    /* margin-right: 5px; */
     flex-direction: column;
     display: flex;
     /* justify-content: center; */

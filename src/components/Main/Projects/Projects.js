@@ -1,6 +1,7 @@
 import React from 'react'
 import SvgFiles from '../../SvgFiles'
 import {StyledProjects} from './ProjectsStyles'
+import loginWebClassIMG from "../../../img/Login-WebClass.jpg"
 const Projects = () => {
     return (
         <StyledProjects>
@@ -8,7 +9,7 @@ const Projects = () => {
             <div className="project">
                 <div className="showPhotos">
                     <button> ( </button>
-                    <img/>
+                    <img src={loginWebClassIMG} alt="project images"/>
                     <button> ) </button>
                 </div>
                 <div className="projectInfo">
@@ -24,10 +25,13 @@ const Projects = () => {
                         <span><SvgFiles/> Web Design</span>
                         <span><SvgFiles/> Responsive Design</span>
                     </div>
-                    <button>Ver</button>
+                    <button>Live</button>
+                    <button>Go to Files</button>
                 </div>
             </div>
+            <div id="soon">
             <h3>More Projects Soon<br></br>...</h3>
+            </div>
         </StyledProjects>
     )
 }
