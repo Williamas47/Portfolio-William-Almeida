@@ -26,6 +26,9 @@ export const StyledProjects = styled.div`
                 padding: 5px;
                 color: var(--text-primary-color);
                 cursor: pointer;
+                svg{
+                    z-index: 3;
+                }
             }
             img{
                 width: 475px;

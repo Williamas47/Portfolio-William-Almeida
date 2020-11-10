@@ -8,9 +8,9 @@ const Projects = () => {
             <h2><span>P</span>rojects</h2>
             <div className="project">
                 <div className="showPhotos">
-                    <button> ( </button>
+                    <button id='BtnPrev'><SvgFiles icon="Arrow"/></button>
                     <img src={loginWebClassIMG} alt="project images"/>
-                    <button> ) </button>
+                    <button id="BtnNext"><SvgFiles icon="Arrow"/></button>
                 </div>
                 <div className="projectInfo">
                     <h3>WebClass</h3>
