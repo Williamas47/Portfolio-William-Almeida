@@ -20,16 +20,29 @@ export const StyledProjects = styled.div`
             position: relative;
             button{
                 position: absolute;
-                top: 50%;
+                top: 45%;
                 background: transparent;
                 border: 0px;
                 padding: 5px;
                 color: var(--text-primary-color);
                 cursor: pointer;
                 svg{
+
                     z-index: 3;
+                    background: transparent;
                 }
-            }
+
+                }
+                #BtnPrev{
+                    left: -15px;
+                    svg{
+                    transform: rotate(180deg);      
+                    }
+                }
+                #BtnNext{
+                    right: -15px;
+                }
+
             img{
                 width: 475px;
                 height: 275px;
@@ -51,14 +64,26 @@ export const StyledProjects = styled.div`
                 font-size: 1.8em;
             }
             p{
-                padding: 25px 0;
+                padding: 15px 0;
                 width: 75%;
             }
             .projectTags{
                 padding-bottom: 25px;
                 display: flex;
+                justify-content: center;
                 flex-direction: column;
                 gap: 15px;
+                span{
+                    display: flex;
+                    align-items: center;
+                    svg{
+                    margin-right: 10px;
+                    width: 25px;
+                    height: 25px;
+                    }
+                }
+
+
             }
             button{
                 background: transparent;

@@ -9,8 +9,8 @@ const Projects = () => {
             <div className="project">
                 <div className="showPhotos">
                     <button id='BtnPrev'><SvgFiles icon="Arrow"/></button>
-                    <img src={loginWebClassIMG} alt="project images"/>
                     <button id="BtnNext"><SvgFiles icon="Arrow"/></button>
+                    <img src={loginWebClassIMG} alt="project images"/>
                 </div>
                 <div className="projectInfo">
                     <h3>WebClass</h3>
@@ -21,9 +21,9 @@ const Projects = () => {
                         Protótipo feito no Adobe XD
                     </p>
                     <div className="projectTags">
-                        <span><SvgFiles/> Briefing</span>
-                        <span><SvgFiles/> Web Design</span>
-                        <span><SvgFiles/> Responsive Design</span>
+                        <span><SvgFiles icon="DesignIcon"/> Briefing</span>
+                        <span><SvgFiles icon="ComputerIcon"/> Web Design</span>
+                        <span><SvgFiles icon="CellPhoneIcon"/> Responsive Design</span>
                     </div>
                     <button>Live</button>
                     <button>Go to Files</button>
