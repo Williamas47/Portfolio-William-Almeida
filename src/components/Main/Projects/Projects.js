@@ -10,8 +10,11 @@ const Projects = () => {
                 <div className="showPhotos">
                     <button id='BtnPrev'><SvgFiles icon="Arrow"/></button>
                     <button id="BtnNext"><SvgFiles icon="Arrow"/></button>
-                    <img src={loginWebClassIMG} alt="project images"/>
+                    <div id="imgDisplay">
+                        <img src={loginWebClassIMG} alt="project images"/>
+                    </div>
                 </div>
+                {/* <span id="middleDiv"></span> */}
                 <div className="projectInfo">
                     <h3>WebClass</h3>
                     <p>
@@ -25,8 +28,10 @@ const Projects = () => {
                         <span><SvgFiles icon="ComputerIcon"/> Web Design</span>
                         <span><SvgFiles icon="CellPhoneIcon"/> Responsive Design</span>
                     </div>
+                    <div id="projectButtons">
                     <button>Live</button>
                     <button>Go to Files</button>
+                    </div>
                 </div>
             </div>
             <div id="soon">
