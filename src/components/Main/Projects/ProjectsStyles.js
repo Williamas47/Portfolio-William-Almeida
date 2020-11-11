@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-export const StyledProjects = styled.div`
+export const StyledProjects = styled.section`
     height: 100vh;
     color: var(--text-primary-color);
     padding-top: 15px;
@@ -44,8 +44,6 @@ export const StyledProjects = styled.div`
                     transition: box-shadow 0s, transform 0.5s, margin-left 0.5s ;
                     /* transition-delay: 1s; */
                     &:hover{
-                  
-                        
                         transition: box-shadow 0s, transform 1.5s, margin-left 1s ;
                         transform: scale(1.5);
                         position: absolute;
@@ -115,7 +113,7 @@ export const StyledProjects = styled.div`
                     svg{
                     margin-right: 10px;
                     width: 25px;
-                    height: 25px;
+                    height: 30px;
                     }
                 }
             }
