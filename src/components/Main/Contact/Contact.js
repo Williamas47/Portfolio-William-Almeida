@@ -3,8 +3,9 @@ import {StyledContact} from "./ContactStyles";
 const Contact = () => {
     return (
         <StyledContact>
-            <div id="contactLeft">
               <h2><span>C</span>ontact</h2>
+            <div id="contactContent">
+            <div id="contactLeft">
               <form>
                   <label>
                       <p>Name</p>
@@ -15,7 +16,7 @@ const Contact = () => {
                       <input type="email"/>
                   </label>
                   <label>
-                      <p>Subkect</p>
+                      <p>Subject</p>
                       <input type="text"/>
                   </label>
                   <label>
@@ -27,16 +28,17 @@ const Contact = () => {
             </div>
             <div id="contactRight">
                 <div id="map">
-                    <span id="contactInfos">
+                    <div id="contactInfos">
                         <p>
                             Rio Grande do Sul,
                             Alvorada - Bela Vista
                             (51) 985485107
                             williamas66@gmail.com
                         </p>
-                    </span>
+                    </div>
                 </div>
                 
+            </div>
             </div>
         </StyledContact>
     )
