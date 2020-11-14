@@ -12,10 +12,12 @@ const App = () => {
       <Main/>
       <Nav/>
     </div>
-// ao hover no botao do pfd sair otexto "baixar curriculo"
-// div q toda vez q eu scrollo ela aumenta ou diminui
 
 )
 }
-
+// ao hover no botao do pfd sair otexto "baixar curriculo"
+// div q toda vez q eu scrollo ela aumenta ou diminui
+// fazer um componente para o botao com ja a prop do before com o hover
+// vai receber o width e height por parametro(apesar do height acho melhor ser padrao)
+// ver como vai ser a receção do conteudo. como children?
 export default App

@@ -66,15 +66,18 @@ export const StyledContact = styled.section`
                     }
                 }
                 button{
-                    width: 15%;
+                    &:hover span{
+                        left: 29.6%;
+                        top: 32%;
+                    }
                     margin: 0 auto;
-                    /* margin-left: calc(92.5% - 7.5%); */
-                    background: transparent;
-                    border: 1px solid var(--secundary-color);
-                    color: var(--text-primary-color);
-                    padding: 10px 15px;
-                    font-size: 1em;
-                    border-radius: 5px;
+                    /* width: 15%; */
+                    /* background: transparent; */
+                    /* border: 1px solid var(--secundary-color); */
+                    /* color: var(--text-primary-color); */
+                    /* padding: 10px 15px; */
+                    /* font-size: 1em; */
+                    /* border-radius: 5px; */
                 }
             }
         }
@@ -85,34 +88,30 @@ export const StyledContact = styled.section`
             position: relative;
             #map{
                 height: 100%;
-                /* Maybe */
-                    width: 90%;
+                /* With the Google Maps API */
+                /* iframe{
+                    height: 100%;
                     margin-left: 10%;
-                /*  */
+                    width: 90%;
+                    border-radius: 15px 0 0 15px ;
+                }                                */
+
+                    /* With an IMG as the Map */
                 background: transparent;
-                /* padding: 10px; */
+                width: 90%;
+                margin-left: 10%;
                 transition: 1s ease;
-                cursor: pointer;
                 border-radius: 15px 0 0 15px ;
-                /* background-image: url(${adressMapIMG}); */
-                /* background-repeat: no-repeat; */
-                /* background-position: -50px -25px; */
-                background: url(${adressMapIMG}) no-repeat -50px -25px;
-                background-size: 175% 120%;
-                
-                    /* With another img */
-                /* background-position-y: -50px; */
-                /* background-size: 110% 130%; */
-                    /*                  */
-
-
+                cursor: pointer;
+                background: url(${adressMapIMG}) no-repeat -50px -25px; 
+                background-size: 175% 120%; 
                 &:hover{
                     width: 110%;
                     margin-left: -10%;
                     background-position: -25px 0px;
                     background-size: 130% 110%;
                     transition: 1s ease;
-                }
+                } 
                 #contactInfos{
                     line-height: 35px;
                     z-index: 3;
@@ -120,17 +119,11 @@ export const StyledContact = styled.section`
                     background: transparent;
                     padding-top: 15px;
                     margin-left: 15px;
-                    /* padding-left: 15px; */
-                    /* padding: 15px 0 0 15px; */
-                    /* margin: 15px 0 0 15px; */
-                    /* margin-top: 20px; */
-                    /* padding: 15px; */
-                    /* background: rgb(0,0,0, 50%); */
                     p{
                         padding: 10px;
                         background: rgb(0,0,0, 80%);
                     }
-                }
+                }                             
             }
         }
     }

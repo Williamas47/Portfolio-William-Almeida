@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../Button';
 import SvgFiles from '../../SvgFiles';
 // import "./Home.styles.scss"
 import {StyledHome} from "./HomeStyles";
@@ -20,8 +21,15 @@ const Home = () => {
             React Router, React Hooks, FlexBox, GridCSS e sobre os fundamentos de UI e UX design.
         </p>
         <div id="mainButtons">
-        <button id="contactMe">Contact Me</button>
-        <button id="downloadCurriculum"><SvgFiles icon="PdfDownload"/></button>
+            <Button id="contactMe" width="150px">
+                <span>Contact Me</span>
+            </Button>
+            {/* <Button id="downloadCurriculum" width="50px">
+                <span>Download Curriculum</span>
+                <SvgFiles icon="PdfDownload"/>
+            </Button> */}
+        {/* <button id="contactMe"><span>Contact Me</span></button> */}
+        <button id="downloadCurriculum"><span>Download Curriculum</span><SvgFiles icon="PdfDownload"/></button>
         </div>
       
     </StyledHome>

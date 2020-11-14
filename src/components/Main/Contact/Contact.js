@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../Button';
 import {StyledContact} from "./ContactStyles";
 const Contact = () => {
     return (
@@ -23,16 +24,25 @@ const Contact = () => {
                       <p>Message</p>
                       <textarea/>
                   </label>
-                  <button>Send</button>
+                  <Button width="75px">
+                     <span>Send</span>
+                  </Button>
+                  {/* <button>Send</button> */}
               </form>
             </div>
             <div id="contactRight">
                 <div id="map">
+                    {/* 
+                    <iframe title="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95664.66331396684!2d-51.179211489408594!3d-30.03826761032971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951975eaf6bd01dd%3A0xcb9daf995eea188c!2sR.%20Jo%C3%A3o%20de%20Deus%20Oliveira%20-%20Bela%20Vista%2C%20Alvorada%20-%20RS%2C%2094810-290!5e0!3m2!1spt-BR!2sbr!4v1605371095890!5m2!1spt-BR!2sbr" 
+                    height="450" frameborder="0" style={{border: "0"}} allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe> 
+                    */}
                     <div id="contactInfos">
                         <p>
-                            Rio Grande do Sul,
-                            Alvorada - Bela Vista
-                            (51) 985485107
+                            Rio Grande do Sul,<br></br>
+                            Alvorada - Bela Vista<br></br>
+                            (51) 985485107<br></br>
                             williamas66@gmail.com
                         </p>
                     </div>
