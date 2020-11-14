@@ -4,7 +4,7 @@ import {StyledProjects} from './ProjectsStyles'
 import loginWebClassIMG from "../../../img/Login-WebClass.jpg"
 const Projects = () => {
     return (
-        <StyledProjects>
+        <StyledProjects id="Projects">
             <h2><span>P</span>rojects</h2>
             <div className="project">
                 <div className="showPhotos">

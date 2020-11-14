@@ -11,7 +11,14 @@ export const StyledNav = styled.nav`
     display: flex;
     /* justify-content: center; */
     align-items: flex-end;
-    color: var(--text-secundary-color);
+    justify-content: space-around;
+    a{
+        color: var(--text-secundary-color);
+        text-decoration: none;
+    }
+    p{
+        margin-right: 10px;
+    }
     p#activeSection{
         color: var(--text-primary-color);
     }

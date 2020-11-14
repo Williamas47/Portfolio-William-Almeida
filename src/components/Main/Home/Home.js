@@ -5,7 +5,7 @@ import {StyledHome} from "./HomeStyles";
 
 const Home = () => {
     return (
-    <StyledHome>
+    <StyledHome id="Home">
         <p>Hi, My name is</p>
         <h1><span>W</span>illiam <span>A</span>lmeida</h1>
         <h3>And i'm a Front-End Developer Jr.</h3>

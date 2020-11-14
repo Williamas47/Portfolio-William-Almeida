@@ -2,7 +2,7 @@ import React from 'react'
 import {StyledContact} from "./ContactStyles";
 const Contact = () => {
     return (
-        <StyledContact>
+        <StyledContact id="Contact">
               <h2><span>C</span>ontact</h2>
             <div id="contactContent">
             <div id="contactLeft">

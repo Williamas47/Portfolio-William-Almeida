@@ -2,7 +2,7 @@ import React from 'react'
 import {StyledSkills} from "./SkillsStyles";
 const Skills = () => {
     return (
-        <StyledSkills>
+        <StyledSkills id="Skills">
             <h2><span>S</span>kills</h2>
             <section id='skillsContent'>
                 <div id="webDev">

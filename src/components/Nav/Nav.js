@@ -3,10 +3,10 @@ import {StyledNav} from "./NavStyles";
 const Nav = () => {
     return (
         <StyledNav>
-            <p id="activeSection">Home</p>
-            <p>Skills</p>
-            <p>Projects</p>
-            <p>Contact</p>
+            <a href="#Home"><p id="activeSection">Home</p></a>
+            <a href="#Skills"><p>Skills</p></a>
+            <a href="#Projects"><p>Projects</p></a>
+            <a href="#Contact"><p>Contact</p></a>
         </StyledNav>
     )
 }
