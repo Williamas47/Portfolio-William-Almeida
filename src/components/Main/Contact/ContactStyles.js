@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import adressMapIMG from "../../../img/AdressMap.png";
+import adressMapIMG from "../../../img/Adress.png";
 
 export const StyledContact = styled.section`
     height: 100vh;
@@ -90,13 +90,29 @@ export const StyledContact = styled.section`
                     margin-left: 10%;
                 /*  */
                 background: transparent;
-
                 /* padding: 10px; */
-                background-image: url(${adressMapIMG});
+                transition: 1s ease;
+                cursor: pointer;
                 border-radius: 15px 0 0 15px ;
-                background-position-y: -50px;
-                background-repeat: no-repeat;
-                background-size: 100%;
+                /* background-image: url(${adressMapIMG}); */
+                /* background-repeat: no-repeat; */
+                /* background-position: -50px -25px; */
+                background: url(${adressMapIMG}) no-repeat -50px -25px;
+                background-size: 175% 120%;
+                
+                    /* With another img */
+                /* background-position-y: -50px; */
+                /* background-size: 110% 130%; */
+                    /*                  */
+
+
+                &:hover{
+                    width: 110%;
+                    margin-left: -10%;
+                    background-position: -25px 0px;
+                    background-size: 130% 110%;
+                    transition: 1s ease;
+                }
                 #contactInfos{
                     line-height: 35px;
                     z-index: 3;
