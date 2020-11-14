@@ -2,6 +2,7 @@ import React from 'react'
 import SvgFiles from '../../SvgFiles'
 import {StyledProjects} from './ProjectsStyles'
 import loginWebClassIMG from "../../../img/Login-WebClass.jpg"
+import Button from '../../Button'
 const Projects = () => {
     return (
         <StyledProjects id="Projects">
@@ -29,8 +30,14 @@ const Projects = () => {
                         <span><SvgFiles icon="CellPhoneIcon"/> Responsive Design</span>
                     </div>
                     <div id="projectButtons">
-                    <button>Live</button>
-                    <button>Go to Files</button>
+                        <Button id="liveBtn" width="75px">
+                            <span>Live</span>
+                        </Button>
+                        <Button id="filesBtn" width="115px">
+                            <span>Go to Files</span>
+                        </Button>
+                    {/* <button>Live</button> */}
+                    {/* <button>Go to Files</button> */}
                     </div>
                 </div>
             </div>

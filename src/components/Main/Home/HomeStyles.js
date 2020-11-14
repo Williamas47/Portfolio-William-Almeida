@@ -82,9 +82,10 @@ export const StyledHome = styled.section`
         }
         button#downloadCurriculum{
             width: 50px;
-            padding-right: 3px;
+            /* padding-right: -3px; */
             padding-top: 3px;
             position: relative;
+            transition: 1.5s ease; 
             span{
                 /* display: none; */
                 width: 0px;
@@ -93,39 +94,34 @@ export const StyledHome = styled.section`
                 display: inline-block;
             }
             svg{
-                /* margin-right: 25px; */
+                /* margin-right: -3px; */
                 z-index: 3;
                 left: 3px;
                 width: 27px;
                 height: 30px;
-            }
-            &:hover svg{
-                background: transparent;
+                /* padding-top: 3px; */
                 position: absolute;
                 left: calc(calc(50% - calc( 27px / 2)) - 2px);
                 top: calc(50% - calc(30px / 2));
-            }
+                background: transparent;
+            } 
             &:before{
-                content: "";
-                transition: 1.5s ease-out;
-                position:absolute;
-                border-radius: 50%;
-                height: 0px;
-                width: 0px;
-                left: 50%;
-                top: 50%;
-                /* left: 100%; */
-
+                /* transition: width 1.5s height 6s; */
+                left: -50%;
             }
             &:hover{
-                padding: 0 10px;
                 display: flex;
                 align-items: center;
+                width: 185px; 
+                transition: 1.5s ease; 
+                svg{
+                   position: absolute;
+                   left: 80%;
+                   background: transparent;
+                }
 
-                /* width: 200px; */
-                /* transition: 1.5s ease; */
-                /* width: auto; */
-                /* span{
+                span{
+                    display: inline-block;
                     height: auto;
                     width: auto;
                     width: 127.5px;
@@ -133,28 +129,13 @@ export const StyledHome = styled.section`
                     margin-right: 10px;
                     text-align: center;
                     transition: width 1s ease;
-                } */
-                svg{
-                    background: transparent;
-                    position: absolute;
-                    z-index: 3;
-                    margin: 0 auto;
-                    left: calc(calc(50% - calc( 27px / 2)) - 2px);
-                    top: calc(50% - calc(30px / 2));
                 }
                 &:before{
-                    height: 75px;
-                    width: 75px;
-                    left: calc(50% - calc( 75px / 2));
-                    top: calc(50% - calc(75px / 2));
-                    background:  var(--secundary-color); 
-                    z-index: 1;
-
-                    /* height: 100px;
+                    height: 100px;
                     width: 225px;
                     top: calc(50% - calc(100px / 2)); 
-                    left: -10px; */
-                    /* transition: width 2.5s; */
+                    left: -10px; 
+                    transition: width 2.5s;
                 }
             }
         }

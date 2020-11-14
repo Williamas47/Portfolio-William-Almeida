@@ -24,13 +24,11 @@ const Home = () => {
             <Button id="contactMe" width="150px">
                 <span>Contact Me</span>
             </Button>
-            {/* <Button id="downloadCurriculum" width="50px">
+            <Button id="downloadCurriculum" width="50px">
                 <span>Download Curriculum</span>
                 <SvgFiles icon="PdfDownload"/>
-            </Button> */}
-        {/* <button id="contactMe"><span>Contact Me</span></button> */}
-        <button id="downloadCurriculum"><span>Download Curriculum</span><SvgFiles icon="PdfDownload"/></button>
-        </div>
+            </Button>
+ </div>
       
     </StyledHome>
     )

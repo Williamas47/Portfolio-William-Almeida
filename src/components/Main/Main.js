@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../Button';
+// import Button from '../Button';
 import Contact from './Contact/Contact';
 import Home from './Home/Home';
 import Projects from './Projects/Projects';

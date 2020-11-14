@@ -119,14 +119,16 @@ export const StyledProjects = styled.section`
             }
             #projectButtons{
                 button{
-                background: transparent;
-                /* width: 30%; */
-                padding: 10px 25px;
-                border: 1px solid var(--secundary-color);
-                border-radius: 5px;
-                color: var(--text-primary-color);
-                margin-right: 15px;
-                cursor: pointer;
+                    margin-right: 15px;
+                    &:hover#liveBtn span{
+                        left: 34%;
+                        top: 33%;
+                    }
+                    &:hover#filesBtn span{
+                        top: 33%;
+                        left: 22%;
+                    }
+
                 }
             }
         }
