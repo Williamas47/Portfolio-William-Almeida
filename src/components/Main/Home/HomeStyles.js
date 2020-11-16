@@ -85,7 +85,7 @@ export const StyledHome = styled.section`
             /* padding-right: -3px; */
             padding-top: 3px;
             position: relative;
-            transition: 1.5s ease; 
+            transition: 1s ease; 
             span{
                 /* display: none; */
                 width: 0px;
@@ -113,11 +113,13 @@ export const StyledHome = styled.section`
                 display: flex;
                 align-items: center;
                 width: 185px; 
-                transition: 1.5s ease; 
+                transition: 1s ease; 
+                transition-delay: 0.3s;
                 svg{
                    position: absolute;
                    left: 80%;
                    background: transparent;
+                   transition-delay: 0.3s;
                 }
 
                 span{
@@ -128,7 +130,8 @@ export const StyledHome = styled.section`
                     opacity: 1;
                     margin-right: 10px;
                     text-align: center;
-                    transition: width 1s ease;
+                    transition: opacity 2s width 1s ease;
+                    transition-delay: 0.3s;
                 }
                 &:before{
                     height: 100px;
@@ -136,6 +139,7 @@ export const StyledHome = styled.section`
                     top: calc(50% - calc(100px / 2)); 
                     left: -10px; 
                     transition: width 2.5s;
+                    transition-delay: 0.3s;
                 }
             }
         }

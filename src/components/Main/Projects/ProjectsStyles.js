@@ -128,7 +128,6 @@ export const StyledProjects = styled.section`
                         top: 33%;
                         left: 22%;
                     }
-
                 }
             }
         }
