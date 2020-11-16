@@ -1,9 +1,18 @@
 import React from 'react'
 import SvgFiles from '../../SvgFiles'
 import {StyledProjects} from './ProjectsStyles'
-import loginWebClassIMG from "../../../img/Login-WebClass.jpg"
+import homeWebClassIMG from "../../../img/WebClass-home.png"
+import pricesWebClassIMG from "../../../img/WebClass-prices.png"
+import mobileWebClassIMG from "../../../img/WebClass-mobile.png"
+import testimunialsWebClassIMG from "../../../img/WebClass-testimunials.png"
+import loginWebClassIMG from "../../../img/WebClass-login.jpg"
+import coursesWebClassIMG from "../../../img/WebClass-courses.jpg"
+import courseWebClassIMG from "../../../img/WebClass-course.jpg"
 import Button from '../../Button'
 const Projects = () => {
+let $images = document.getElementsByClassName("projectImage");
+console.log($images);
+
     return (
         <StyledProjects id="Projects">
             <h2><span>P</span>rojects</h2>
@@ -12,7 +21,16 @@ const Projects = () => {
                     <button id='BtnPrev'><SvgFiles icon="Arrow"/></button>
                     <button id="BtnNext"><SvgFiles icon="Arrow"/></button>
                     <div id="imgDisplay">
-                        <img id="CloseImg" src={loginWebClassIMG} alt="project images"/>
+                        {/* <img id="closeImg" className="projectImage" src={loginWebClassIMG} alt="project images"/> */}
+                        <ul>
+                        <li><img alt="Home Webclass" className="projectImage" src={homeWebClassIMG}/></li>
+                        <li><img alt="Prices Webclass" className="projectImage" src={pricesWebClassIMG} /></li>
+                        <li><img alt="Mobile WebClass" className="projectImage" src={mobileWebClassIMG} /></li>
+                        <li><img alt="Testimunials WebClass" className="projectImage" src={testimunialsWebClassIMG}/></li>
+                        <li><img alt="Login WebClass" className="projectImage" src={loginWebClassIMG}/></li>
+                        <li><img alt="Courses WebClass" className="projectImage" src={coursesWebClassIMG} /></li>
+                        <li><img alt="Course WebClass" className="projectImage" src={courseWebClassIMG} /></li>
+                        </ul>
                     </div>
                 </div>
                 {/* <span id="middleDiv"></span> */}

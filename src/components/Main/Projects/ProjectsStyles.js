@@ -50,36 +50,69 @@ export const StyledProjects = styled.section`
             background: #151E29;
             padding: 15px;
             border-radius: 5px;
-            position: relative;
             width: 55%;
             height: 350px;
             display: flex;
             align-items: center;
+
+            position: relative;
             /* overfloW: hidden; */
+
             #imgDisplay{
                 margin: 0 auto;
                 width: 100%;
                 height: 100%;
                 z-index: 2;
+                
+                position: relative;
+                overflow: hidden;
+                ul{
+                    /* width: auto; */
+                    /* position: relative; */
+                    margin: 0;
+
+                    /* width: 100%; */
+                    /* height: 100%; */
+
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    float: left;
+                    width: auto;
+                    /* width: auto; */
+                    /* display: inline-block; */
+                    /* display: block; */
+                    li{
+                        /* position: relative; */
+                        /* display: block; */
+                        margin: 0;
+                        padding: 0;
+                        width: 551.344px;
+                        height: 320px;
+                        float: left;
+                        }
+                    }
+
+                /* 
+                .projectImage{
+                     display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    border: 2px solid red;
+                    display: inline;
+                    width: auto; 
+                } 
+                */
                 img{
+                    /* width: auto; */
                     cursor: zoom-in;
                     width: 100%;
                     height: 100%;
                     z-index: 3;
                     transition: box-shadow 0s, transform 0.5s, margin-left 0.5s ;
                     /* animation: ${imgAnimationOut} 0.5s forwards; */
-                    &#OpenImg{animation: ${imgAnimationIn} 2s forwards; }
-                    &#CloseImg{animation: ${imgAnimationOut} 0.5s forwards; }
-
-                    /* &:hover{
-                        transition: box-shadow 0s, transform 1.5s, margin-left 1s ;
-                        transform: scale(1.5);
-                        position: absolute;
-                        margin: 0 auto;
-                        margin-left: 40%;
-                        z-index: 4;
-                        box-shadow: 0px 0px 1px 700px rgb(0,0,0, 70%), 1px 1px 10px 3px rgb(255, 255, 255, 60%);         
-                    } */
+                    &#openImg{animation: ${imgAnimationIn} 2s forwards; }
+                    &#closeImg{animation: ${imgAnimationOut} 0.5s forwards; }
                 }
             }
             button{
