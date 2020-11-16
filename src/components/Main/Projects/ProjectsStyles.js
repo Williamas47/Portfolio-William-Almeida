@@ -50,6 +50,7 @@ export const StyledProjects = styled.section`
             background: #151E29;
             padding: 15px;
             border-radius: 5px;
+            min-width: 581.34px;
             width: 55%;
             height: 350px;
             display: flex;
@@ -67,24 +68,25 @@ export const StyledProjects = styled.section`
                 position: relative;
                 overflow: hidden;
                 ul{
-                    /* width: auto; */
-                    /* position: relative; */
                     margin: 0;
-
-                    /* width: 100%; */
-                    /* height: 100%; */
-
                     padding: 0;
                     list-style: none;
                     display: flex;
                     float: left;
                     width: auto;
+
+                    /* position: relative; */
+                    /* width: 100%; */
+                    /* height: 100%; */
+
                     /* width: auto; */
                     /* display: inline-block; */
                     /* display: block; */
                     li{
                         /* position: relative; */
                         /* display: block; */
+                        /* width: 100%; */
+                        /* height: 100%; */
                         margin: 0;
                         padding: 0;
                         width: 551.344px;
