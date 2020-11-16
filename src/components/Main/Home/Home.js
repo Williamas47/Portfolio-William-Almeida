@@ -1,7 +1,6 @@
 import React from 'react'
 import Button from '../../Button';
 import SvgFiles from '../../SvgFiles';
-// import "./Home.styles.scss"
 import {StyledHome} from "./HomeStyles";
 
 const Home = () => {
