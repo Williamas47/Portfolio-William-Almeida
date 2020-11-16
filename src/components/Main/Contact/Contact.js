@@ -42,7 +42,7 @@ const Contact = () => {
                         <p>
                             Rio Grande do Sul,<br></br>
                             Alvorada - Bela Vista<br></br>
-                            (51) 985485107<br></br>
+                            +55 (51) 98548-5107<br></br>
                             williamas66@gmail.com
                         </p>
                     </div>
