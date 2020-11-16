@@ -1,4 +1,28 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
+const imgAnimationIn = keyframes`
+    0%{  position: absolute; box-shadow: 0px 0px 1px 700px rgb(0,0,0, 70%), 1px 1px 10px 3px rgb(255, 255, 255, 60%); };
+    75%{ position: absolute; margin-left: 40%;}
+    100% 
+    {
+        transform: scale(1.5);
+        position: absolute;
+        margin: 15px auto;
+        box-shadow: 0px 0px 1px 700px rgb(0,0,0, 70%), 1px 1px 10px 3px rgb(255, 255, 255, 60%);
+        z-index: 4;
+        margin-left: 40%;   
+    };
+`
+const imgAnimationOut = keyframes`
+    0%{  
+        transform: scale(1.5);
+        position: absolute;
+        margin: 15px auto;
+        z-index: 4;
+        margin-left: 40%; 
+    };   
+    25%{ position: absolute; margin-left: 40%;};
+    100%{ };
+` 
 export const StyledProjects = styled.section`
     height: 100vh;
     color: var(--text-primary-color);
@@ -38,12 +62,16 @@ export const StyledProjects = styled.section`
                 height: 100%;
                 z-index: 2;
                 img{
+                    cursor: zoom-in;
                     width: 100%;
                     height: 100%;
                     z-index: 3;
                     transition: box-shadow 0s, transform 0.5s, margin-left 0.5s ;
-                    /* transition-delay: 1s; */
-                    &:hover{
+                    /* animation: ${imgAnimationOut} 0.5s forwards; */
+                    &#OpenImg{animation: ${imgAnimationIn} 2s forwards; }
+                    &#CloseImg{animation: ${imgAnimationOut} 0.5s forwards; }
+
+                    /* &:hover{
                         transition: box-shadow 0s, transform 1.5s, margin-left 1s ;
                         transform: scale(1.5);
                         position: absolute;
@@ -51,7 +79,7 @@ export const StyledProjects = styled.section`
                         margin-left: 40%;
                         z-index: 4;
                         box-shadow: 0px 0px 1px 700px rgb(0,0,0, 70%), 1px 1px 10px 3px rgb(255, 255, 255, 60%);         
-                    }
+                    } */
                 }
             }
             button{
@@ -70,8 +98,22 @@ export const StyledProjects = styled.section`
             #BtnPrev{
                 left: -15px;
                 svg{transform: rotate(180deg); }
+                    transition: 0.5s ease;
+                &:hover{
+                    /* transform: scale(1.1); */
+                    left: -20px;
+                    transition: 0.5s ease;
+                }
             }
-            #BtnNext{ right: -15px; }
+            #BtnNext{
+                 right: -15px;
+                 transition: 0.5s ease;
+                &:hover{
+                    /* transform: scale(1.1); */
+                    right: -20px;
+                    transition: 0.5s ease;
+                } 
+            }
         }
         .showPhotos:after{
             content: "";

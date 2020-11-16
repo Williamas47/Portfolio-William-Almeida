@@ -12,7 +12,7 @@ const Projects = () => {
                     <button id='BtnPrev'><SvgFiles icon="Arrow"/></button>
                     <button id="BtnNext"><SvgFiles icon="Arrow"/></button>
                     <div id="imgDisplay">
-                        <img src={loginWebClassIMG} alt="project images"/>
+                        <img id="CloseImg" src={loginWebClassIMG} alt="project images"/>
                     </div>
                 </div>
                 {/* <span id="middleDiv"></span> */}
