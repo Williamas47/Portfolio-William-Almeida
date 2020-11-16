@@ -12,24 +12,98 @@ import Button from '../../Button'
 const Projects = () => {
 let $images = document.getElementsByClassName("projectImage");
 console.log($images);
+let [img, setImg] = React.useState(false);
 
+function check({target}){
+    setImg(!img);
+     if (img){
+         target.classList.add("openImg");
+         target.classList.remove("closeImg");
+        }else{
+            
+            target.classList.add("closeImg");
+        target.classList.remove("openImg");
+      }
+    console.log(target);
+    // target.setAttribute("id", "openImg")
+    // target.removeAttribute("id", "closeImg")
+
+    // target.setAttribute("id", "closeImg")
+    // target.removeAttribute("id", "openImg")
+}
+    let numImages = $images.length;
+    let pos = 0;
+function nextPrev({target}){
+    if (numImages === 0 ){
+        return "";
+    }
+    let $carrousel = document.getElementById("carrousel");
+    console.log(target.id);
+    let actualButton = target.id;
+    // if (pos < numImages -1){
+    //     pos ++
+    //     console.log(pos);
+    // }else{
+    //     pos = 0;
+    // }
+    
+    // console.log(numb);
+    if (actualButton === "BtnNext"){
+        // console.log(pos);
+        // console.log(numImages)
+        if (pos < numImages -1){
+            pos ++
+            console.log(pos);
+        }else{
+            pos = 0;
+        }
+        let numb = 551.34 * pos;
+        console.log("Gotcha!");
+        $carrousel.style.marginLeft= `-${numb}px`; 
+        // console.log(numb);
+        //  console.log(numb - 551.34);
+        
+    }else{
+        console.log("aq");
+        if (pos < numImages -1 && pos !== 0){
+            let numb = 551.34 * pos;
+            pos --
+            console.log(pos);
+            $carrousel.style.marginLeft= `-${numb - 551.34}px`; 
+        }else if (pos === 0){
+            pos = 6;
+            let numb = 551.34 * pos;
+            $carrousel.style.marginLeft= `-${numb}px`; 
+        }else{
+            let numb = 551.34 * pos;
+            console.log("aa");
+            $carrousel.style.marginLeft= `-${numb - 551.34}px`; 
+            pos --;
+        }
+
+        // console.log(numb);
+    }
+
+
+    // console.log($carrousel);
+}
     return (
         <StyledProjects id="Projects">
             <h2><span>P</span>rojects</h2>
             <div className="project">
                 <div className="showPhotos">
-                    <button id='BtnPrev'><SvgFiles icon="Arrow"/></button>
-                    <button id="BtnNext"><SvgFiles icon="Arrow"/></button>
+                    <button id='BtnPrev' onClick={nextPrev}><SvgFiles icon="Arrow" disabled/></button>
+                    <button id="BtnNext" onClick={nextPrev}><SvgFiles icon="Arrow"/></button>
                     <div id="imgDisplay">
                         {/* <img id="closeImg" className="projectImage" src={loginWebClassIMG} alt="project images"/> */}
-                        <ul>
-                        <li><img alt="Home Webclass" className="projectImage" src={homeWebClassIMG}/></li>
-                        <li><img alt="Prices Webclass" className="projectImage" src={pricesWebClassIMG} /></li>
-                        <li><img alt="Mobile WebClass" className="projectImage" src={mobileWebClassIMG} /></li>
-                        <li><img alt="Testimunials WebClass" className="projectImage" src={testimunialsWebClassIMG}/></li>
-                        <li><img alt="Login WebClass" className="projectImage" src={loginWebClassIMG}/></li>
-                        <li><img alt="Courses WebClass" className="projectImage" src={coursesWebClassIMG} /></li>
-                        <li><img alt="Course WebClass" className="projectImage" src={courseWebClassIMG} /></li>
+                        <ul id="carrousel">
+                        <li><img alt="Home Webclass" className="projectImage" src={homeWebClassIMG} onClick={check}/></li>
+                        <li><img alt="Prices Webclass" className="projectImage" src={pricesWebClassIMG} onClick={check}/></li>
+                        <li><img alt="Mobile WebClass" className="projectImage" src={mobileWebClassIMG} onClick={check}/></li>
+                        <li><img alt="Testimunials WebClass" className="projectImage" src={testimunialsWebClassIMG}onClick={check}/></li>
+                        <li><img alt="Login WebClass" className="projectImage" src={loginWebClassIMG}onClick={check}/></li>
+                        <li><img alt="Courses WebClass" className="projectImage" src={coursesWebClassIMG} onClick={check}/></li>
+                        <li><img alt="Course WebClass" className="projectImage" src={courseWebClassIMG} onClick={check}/></li>
                         </ul>
                     </div>
                 </div>

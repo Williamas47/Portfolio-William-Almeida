@@ -74,7 +74,7 @@ export const StyledProjects = styled.section`
                     display: flex;
                     float: left;
                     width: auto;
-
+                    /* margin-left: -150px; */
                     /* position: relative; */
                     /* width: 100%; */
                     /* height: 100%; */
@@ -82,6 +82,7 @@ export const StyledProjects = styled.section`
                     /* width: auto; */
                     /* display: inline-block; */
                     /* display: block; */
+                    transition: 1.5s ease;
                     li{
                         /* position: relative; */
                         /* display: block; */
@@ -92,6 +93,12 @@ export const StyledProjects = styled.section`
                         width: 551.344px;
                         height: 320px;
                         float: left;
+                        /* transition: 3s ease; */
+                        img{
+
+                  
+                            /* position: absolute; */
+                        }
                         }
                     }
 
@@ -113,8 +120,8 @@ export const StyledProjects = styled.section`
                     z-index: 3;
                     transition: box-shadow 0s, transform 0.5s, margin-left 0.5s ;
                     /* animation: ${imgAnimationOut} 0.5s forwards; */
-                    &#openImg{animation: ${imgAnimationIn} 2s forwards; }
-                    &#closeImg{animation: ${imgAnimationOut} 0.5s forwards; }
+                    &.openImg{animation: ${imgAnimationIn} 2s forwards; }
+                    &.closeImg{animation: ${imgAnimationOut} 0.5s forwards; }
                 }
             }
             button{
@@ -126,6 +133,7 @@ export const StyledProjects = styled.section`
                 color: var(--text-primary-color);
                 cursor: pointer;
                 svg{
+                    pointer-events: none;
                     z-index: 3;
                     background: transparent;
                 }
