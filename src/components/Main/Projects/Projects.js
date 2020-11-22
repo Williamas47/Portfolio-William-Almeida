@@ -11,28 +11,50 @@ import courseWebClassIMG from "../../../img/WebClass-course.jpg"
 import Button from '../../Button'
 const Projects = () => {
 let $images = document.getElementsByClassName("projectImage");
-console.log($images);
 let [img, setImg] = React.useState(false);
-
+let [pos, setPos] = React.useState(0);
+let numImages = $images.length;
+let $NextBtn = document.getElementById("BtnNext");
+let $PrevBtn = document.getElementById("BtnPrev");
+// let $imgButtons = document.getElementsByClassName("photosBtn");
+console.log($images);
+// let pos = 0;
+// $imgButtons.disabled = true;
+// $NextBtn.style.cursor= "not-allowed";
+// $imgButtons.style.cursor="not-allowed";
 function check({target}){
     setImg(!img);
-     if (img){
-         target.classList.add("openImg");
-         target.classList.remove("closeImg");
-        }else{
-            
-            target.classList.add("closeImg");
-        target.classList.remove("openImg");
-      }
-    console.log(target);
-    // target.setAttribute("id", "openImg")
-    // target.removeAttribute("id", "closeImg")
+    if (img){
+        $NextBtn.style.cursor= "not-allowed";
+        $NextBtn.disabled = true;
+        $PrevBtn.disabled = true;
+        $PrevBtn.style.cursor= "not-allowed";
 
-    // target.setAttribute("id", "closeImg")
-    // target.removeAttribute("id", "openImg")
+        target.classList.add("openImg");
+        target.classList.remove("closeImg");
+        console.log(target);
+        target.style.cursor = "zoom-out";
+        for (let i = 0; i < $images.length; i++){
+            if($images[i] === target){
+                console.log(`Esse: ${target}, ${i}`)
+                setPos(i);
+            }else{
+                console.log("Nao");
+            }
+        }
+    }else{
+        $NextBtn.style.cursor= "pointer";
+        $NextBtn.disabled = false;
+        $PrevBtn.disabled = false;
+        $PrevBtn.style.cursor= "pointer";
+
+        target.style.cursor = "zoom-in";
+        target.classList.add("closeImg");
+        target.classList.remove("openImg");
+        }
+    console.log(target);
 }
-    let numImages = $images.length;
-    let pos = 0;
+
 function nextPrev({target}){
     if (numImages === 0 ){
         return "";
@@ -92,8 +114,8 @@ function nextPrev({target}){
             <h2><span>P</span>rojects</h2>
             <div className="project">
                 <div className="showPhotos">
-                    <button id='BtnPrev' onClick={nextPrev}><SvgFiles icon="Arrow" disabled/></button>
-                    <button id="BtnNext" onClick={nextPrev}><SvgFiles icon="Arrow"/></button>
+                    <button id="BtnPrev" className="photosBtn"onClick={nextPrev}><SvgFiles icon="Arrow" disabled/></button>
+                    <button id="BtnNext" className="photosBtn"onClick={nextPrev}><SvgFiles icon="Arrow"/></button>
                     <div id="imgDisplay">
                         {/* <img id="closeImg" className="projectImage" src={loginWebClassIMG} alt="project images"/> */}
                         <ul id="carrousel">
