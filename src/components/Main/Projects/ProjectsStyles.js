@@ -10,6 +10,7 @@ const imgAnimationIn = keyframes`
         box-shadow: 0px 0px 1px 700px rgb(0,0,0, 70%), 1px 1px 10px 3px rgb(255, 255, 255, 60%);
         z-index: 4;
         margin-left: 40%;   
+
     };
 `
 const imgAnimationOut = keyframes`
@@ -59,6 +60,7 @@ export const StyledProjects = styled.section`
             position: relative;
             /* overfloW: hidden; */
 
+                /* overfloW: visible; */
             #imgDisplay{
                 margin: 0 auto;
                 width: 100%;
@@ -74,6 +76,8 @@ export const StyledProjects = styled.section`
                     display: flex;
                     float: left;
                     width: auto;
+                    transition: 1s ease;
+
                     /* margin-left: -150px; */
                     /* position: relative; */
                     /* width: 100%; */
@@ -82,7 +86,6 @@ export const StyledProjects = styled.section`
                     /* width: auto; */
                     /* display: inline-block; */
                     /* display: block; */
-                    transition: 1.5s ease;
                     li{
                         /* position: relative; */
                         /* display: block; */
@@ -98,7 +101,7 @@ export const StyledProjects = styled.section`
 
                   
                             /* position: absolute; */
-                        }
+                            }
                         }
                     }
 

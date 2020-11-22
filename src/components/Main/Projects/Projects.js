@@ -16,12 +16,7 @@ let [pos, setPos] = React.useState(0);
 let numImages = $images.length;
 let $NextBtn = document.getElementById("BtnNext");
 let $PrevBtn = document.getElementById("BtnPrev");
-// let $imgButtons = document.getElementsByClassName("photosBtn");
-console.log($images);
-// let pos = 0;
-// $imgButtons.disabled = true;
-// $NextBtn.style.cursor= "not-allowed";
-// $imgButtons.style.cursor="not-allowed";
+
 function check({target}){
     setImg(!img);
     if (img){
@@ -30,9 +25,10 @@ function check({target}){
         $PrevBtn.disabled = true;
         $PrevBtn.style.cursor= "not-allowed";
 
+        target.style.position = "absolute";
+         
         target.classList.add("openImg");
         target.classList.remove("closeImg");
-        console.log(target);
         target.style.cursor = "zoom-out";
         for (let i = 0; i < $images.length; i++){
             if($images[i] === target){
@@ -52,7 +48,6 @@ function check({target}){
         target.classList.add("closeImg");
         target.classList.remove("openImg");
         }
-    console.log(target);
 }
 
 function nextPrev({target}){
@@ -60,37 +55,19 @@ function nextPrev({target}){
         return "";
     }
     let $carrousel = document.getElementById("carrousel");
-    console.log(target.id);
     let actualButton = target.id;
-    // if (pos < numImages -1){
-    //     pos ++
-    //     console.log(pos);
-    // }else{
-    //     pos = 0;
-    // }
-    
-    // console.log(numb);
     if (actualButton === "BtnNext"){
-        // console.log(pos);
-        // console.log(numImages)
         if (pos < numImages -1){
             pos ++
-            console.log(pos);
         }else{
             pos = 0;
         }
         let numb = 551.34 * pos;
-        console.log("Gotcha!");
         $carrousel.style.marginLeft= `-${numb}px`; 
-        // console.log(numb);
-        //  console.log(numb - 551.34);
-        
     }else{
-        console.log("aq");
         if (pos < numImages -1 && pos !== 0){
             let numb = 551.34 * pos;
             pos --
-            console.log(pos);
             $carrousel.style.marginLeft= `-${numb - 551.34}px`; 
         }else if (pos === 0){
             pos = 6;
@@ -98,16 +75,10 @@ function nextPrev({target}){
             $carrousel.style.marginLeft= `-${numb}px`; 
         }else{
             let numb = 551.34 * pos;
-            console.log("aa");
             $carrousel.style.marginLeft= `-${numb - 551.34}px`; 
             pos --;
         }
-
-        // console.log(numb);
     }
-
-
-    // console.log($carrousel);
 }
     return (
         <StyledProjects id="Projects">
