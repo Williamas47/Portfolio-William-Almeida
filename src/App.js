@@ -17,21 +17,31 @@ const App = () => {
   // window.onscroll = function () {
   //   progressBarScroll();
   // };
-
-  window.onscroll = function() { progressScroll() };
+let [barHeight, setBarHeight] = React.useState(0);
+window.onscroll = function() { progressScroll() };
 
 function progressScroll() {
   const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const scrolled = (winScroll / height) * 80;
-  // const scrolled = (winScroll / height) * 100;
-  document.getElementById("progressBar").style.height = scrolled + "vh";
+  // const scrolled = (winScroll / height) * 80;
+  // document.getElementById("progressBar").style.height = scrolled + "vh";
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.height = scrolled + "%";
+  let $bar =  document.getElementById("progressBar");
+  // console.log($bar.style.height);
+  // setBarHeight($bar.style.height)
+  // let regex = /^\d+/g;
+  let barPercent = $bar.style.height.match(/^\d+/g)[0];
+  // console.log(barPercent);
+  setBarHeight(barPercent);
+  // console.log(barHeight);
+  // console.log((document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100);
 }
   return (
     <div id="App">
       <Aside/>
       <Main/>
-      <Nav id="progress-container" style={{background: "blue"}}/>
+      <Nav bar={barHeight} id="progress-container" style={{background: "blue"}}/>
     </div>
   )
 }

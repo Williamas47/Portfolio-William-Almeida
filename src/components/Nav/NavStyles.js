@@ -28,18 +28,21 @@ export const StyledNav = styled.nav`
        /* border-radius: 0 0 5px 5px; */
        border-radius: 5px;
        min-height: 20px;
-        content: "";
-         width: 10px;
-          position: absolute;
-          top: 0;
-          right: 0;
-          background: var(--secundary-color);
+       content: "";
+       width: 10px;
+       position: absolute;
+       top: 0;
+       right: 0;
+       background: var(--secundary-color);
+
+       transition: 0.3s ease;
     }
     #navLinks{
         /* background: red; */
         margin-right: 10px;
         /* padding: 10% 0; */
-        height: 80vh;
+        /* height: 80vh; */
+        height: 100%;
         /* margin: 0 auto; */
         flex-direction: column;
         display: flex;
