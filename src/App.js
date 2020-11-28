@@ -46,14 +46,12 @@ function progressScroll() {
   )
 }
 
-// 1 - Barra lateral
-// 2 - Mapa
+// 1 - Barra lateral  v
+// 2 - Mapa         
 // 3 - Formulário
 // 4 - Responsividade
 // 4: no projects por flex wrap, flex invernt, por tudo centralizado e as img em baixo
 
-
-// div q toda vez q eu scrollo ela aumenta ou diminui pra scrollbar
 
 // arrumar a img qnd clica pra dar zoom
 
@@ -69,6 +67,8 @@ function progressScroll() {
 
 
 // ==== Feitos ==== //
+
+// div q toda vez q eu scrollo ela aumenta ou diminui pra scrollbar
 
 // cursor zoom in zoom out; cursor: zoom-in cursor: zoom-out
 

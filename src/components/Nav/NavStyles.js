@@ -54,6 +54,9 @@ export const StyledNav = styled.nav`
     a{
         color: var(--text-secundary-color);
         text-decoration: none;
+        &:nth-child(2), &:nth-child(3){ 
+            padding-bottom: 15px;
+        }
     }
     p{
         margin-right: 10px;
