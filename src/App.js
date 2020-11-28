@@ -49,11 +49,14 @@ function progressScroll() {
 // 1 - Barra lateral  v
 // 2 - Mapa         
 // 3 - Formulário
-// 4 - Responsividade
-// 4: no projects por flex wrap, flex invernt, por tudo centralizado e as img em baixo
+// 4 - Imagens responsivas(?) e Zoom
+// 5 - Responsividade
+// 5: no projects por flex wrap, flex invernt, por tudo centralizado e as img em baixo
 
 
 // arrumar a img qnd clica pra dar zoom
+
+//corrigir os botoes do project bugando
 
 // div q mostra as imagens se ajustar ao tamanho delas para nao espremer ( pelo menos altura )
 

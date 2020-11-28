@@ -140,6 +140,7 @@ export const StyledProjects = styled.section`
                     z-index: 3;
                     background: transparent;
                 }
+
             }
             #BtnPrev{
                 left: -15px;
@@ -206,12 +207,15 @@ export const StyledProjects = styled.section`
                 }
             }
             #projectButtons{
+                display: flex;
                 button{
                     margin-right: 15px;
+
                     &:hover#liveBtn span{
                         left: 34%;
                         top: 33%;
                     }
+
                     &:hover#filesBtn span{
                         top: 33%;
                         left: 22%;
